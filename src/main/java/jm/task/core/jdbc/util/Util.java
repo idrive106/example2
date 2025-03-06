@@ -18,15 +18,4 @@ public class Util {
             throw new RuntimeException(e);
         }
     }
-
-    public static void closeConnection(Connection connection) {
-        if (connection != null) {
-            try {
-                connection.close();
-                System.out.println("Соединение закрыто");
-            } catch (SQLException e) {
-                System.out.println("Ошибка при закрытии соединения");
-            }
-        }
-    }
 }
