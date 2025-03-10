@@ -30,6 +30,7 @@ public class Util {
                 configuration.setProperty("hibernate.connection.username", USERNAME);
                 configuration.setProperty("hibernate.connection.password", PASSWORD);
                 configuration.setProperty("hibernate.hbm2ddl.auto", "update");
+                configuration.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
 
                 configuration.addAnnotatedClass(User.class);
 
