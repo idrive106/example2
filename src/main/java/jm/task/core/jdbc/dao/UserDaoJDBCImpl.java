@@ -110,7 +110,7 @@ public class UserDaoJDBCImpl implements UserDao {
              Statement statement = connection.createStatement()) {
 
             statement.execute(sql);
-            System.out.println("Все данные из таблицы users удалены!");
+            System.out.println("Все данные из таблицы user удалены!");
 
         } catch (SQLException e) {
             System.out.println("Ошибка при очистке таблицы: " + e.getMessage());
